@@ -1,5 +1,31 @@
 # Desafio Backend Carteira Digital
 
+## Como executar o projeto
+
+1. Crie o `.env`
+
+    ```shell
+    cp .env.example .env
+    ```
+
+2. Inicie os containers
+
+    ```shell
+    docker compose up -d
+    ```
+
+3. Instale as dependências
+
+    ```shell
+    docker compose exec app composer install
+    ```
+
+4. Gere a key
+
+    ```shell
+    docker compose exec app php artisan key:generate
+    ```
+
 ## Objetivo
 
 Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinheiro e realizam transferências entre eles. Vamos nos atentar **somente** ao fluxo de transferência entre dois usuários.
