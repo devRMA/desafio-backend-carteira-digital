@@ -26,6 +26,12 @@
     docker compose exec app php artisan key:generate
     ```
 
+5. Execute as migrations
+
+    ```shell
+    docker compose exec app php artisan migrate
+    ```
+
 ## Objetivo
 
 Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinheiro e realizam transferências entre eles. Vamos nos atentar **somente** ao fluxo de transferência entre dois usuários.
